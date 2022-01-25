@@ -22,7 +22,7 @@
             {{ $thumb := .Resize "1108x" }}
             <img class="card-img-top" src="{{ $thumb.RelPermalink }}" alt="{{ $sitetitle }}" title="{{ $sitetitle }}">
         {{ else }}
-            {{ $thumb := .Fill "360x270 center" }}
+            {{ $thumb := .Resize "360x" }}
             <img class="card-img-top" src="{{ $thumb.RelPermalink }}" alt="{{ $sitetitle }}" title="{{ $sitetitle }}">
         {{ end }}
     {{ end }}

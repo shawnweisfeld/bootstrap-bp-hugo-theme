@@ -102,5 +102,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-exampleSite/.hugo_build.lock
